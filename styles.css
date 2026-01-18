@@ -16,4 +16,6 @@ h1 {
 
 p {
     padding: 1rem;
+    background-color: hsl(195, 53%, 79%);
+    margin-bottom: 0.8rem;
 }
