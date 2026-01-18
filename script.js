@@ -111,6 +111,9 @@ function displayBook(book){
         removeBook(book.id);
     });
 
+    const btnGroup = document.createElement('div');
+    btnGroup.classList.add('btnGroup');
+
     const btnToggle = document.createElement('button');
     btnToggle.classList.add('btn-toggle');
     btnToggle.textContent = "Change Status";
@@ -120,8 +123,9 @@ function displayBook(book){
         status.textContent = `Status: ${book.read}`;
     });
     
-    content.appendChild(btnRemove);
-    content.appendChild(btnToggle);
+    btnGroup.appendChild(btnRemove);
+    btnGroup.appendChild(btnToggle);
+    content.appendChild(btnGroup);
     container.appendChild(content);
 }
 
