@@ -79,9 +79,26 @@ function displayBook(book){
     const content = document.createElement('div');
     content.classList.add('book-card');
 
-    const text = document.createElement('p');
-    text.textContent = `"${book.title}" by ${book.author}, ${book.pages} pages. Status: ${book.read}`;
-    content.appendChild(text);
+    const title = document.createElement('h3');
+    title.classList.add('title');
+    title.textContent = `"${book.title}"`;
+
+    const author = document.createElement('p');
+    author.classList.add('author');
+    author.textContent = `by ${book.author}`;
+
+    const pages = document.createElement('p');
+    pages.classList.add('pages');
+    pages.textContent = `${book.pages} pages`;
+
+    const status = document.createElement('p');
+    status.classList.add('status-text');
+    status.textContent = `Status: ${book.read}`;
+
+    content.appendChild(title);
+    content.appendChild(author);
+    content.appendChild(pages);
+    content.appendChild(status);
 
     const btnRemove = document.createElement('button');
     btnRemove.classList.add('btn-remove');
