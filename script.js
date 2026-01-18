@@ -64,9 +64,14 @@ close.addEventListener('click', () => {
 
 function displayBook(book){
     const content = document.createElement('p');
+    const btnRemove = document.createElement('button');
+
     content.classList.add('book');
     content.textContent = book;
     container.appendChild(content);
+
+    btnRemove.textContent = 'Remove';
+    content.appendChild(btnRemove);
 }
 
 displayLibrary(myLibrary);
