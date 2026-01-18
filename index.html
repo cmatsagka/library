@@ -10,38 +10,36 @@
 <body>
     <h1>My Library</h1>
 
-    <div class="container"></div>
+    <section class="container"></section>
 
     <button id="newBook">New Book</button>
 
     <dialog id="dialog">
         <form method="dialog">
+            <h3 Add New Book>Title</h3>
             <div class="form-group">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="e.g. The Hobbit" required>
             </div>
             <div class="form-group">
-                <label for="author">Author:</label>
-                <input type="text" id="author" name="author" required>               
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" placeholder="J.R.R. Tolkien" required>               
             </div>
             <div class="form-group">
-                <label for="pages">Pages:</label>
+                <label for="pages">Number of Pages</label>
                 <input type="number" id="pages" name="pages" min="1" required>
             </div>
-            <div class="form-group">
-                <fieldset>
-                    <legend>Have you read it?</legend>
-                    
-                    <div>
-                        <label for="read-checkbox">Yes</label>
-                        <input type="checkbox" name="read" id="read-checkbox">
-                    </div>
+            <fieldset>
+                <legend>Status</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="read" id="read-checkbox">
+                    <label for="read-checkbox">I have read this book</label>
+                </div>
+            </fieldset>
 
-                </fieldset>
-            </div>
-            <div>
-                <button type="button" id="close" class="btnSecondary">X</button>
-                <input type="submit" id="addBook" value="Add Book"/>
+            <div class="fotm-button">
+                <button type="button" id="close" class="btnSecondary">Cancel</button>
+                <button type="submit" id="addBook" value="Add Book">Add to Library</button>
             </div>
         </form>
     </dialog>
