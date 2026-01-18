@@ -67,6 +67,7 @@ h1 {
 .book-card p {
     margin-bottom: 1rem;
     font-style: italic;
+    flex-grow: 1;
 }
 
 dialog {
@@ -100,6 +101,15 @@ form {
     display: flex;
     gap: 0.8rem;
     margin-top: 1rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 0.8rem;
 }
 
 .btn-remove {
