@@ -1,4 +1,4 @@
-const myLibrary = [];
+let myLibrary = [];
 let display = [];
 
 function Book(title, author, pages, read) {
@@ -66,20 +66,25 @@ function displayBook(book){
     const content = document.createElement('p');
     
     content.classList.add('book');
-    content.textContent = book;
+    content.textContent = `${book.title} by ${book.author} ${book.pages} ${book.read}`;
     container.appendChild(content);
 
     const btnRemove = document.createElement('button');
     btnRemove.dataset.index = book.id;
-    let bookToRemove = book.id;
 
     btnRemove.textContent = 'Remove';
     content.appendChild(btnRemove);
 
     btnRemove.addEventListener('click', () => {
         content.remove();
-        
+        removeBook(book.id);
     });
+
+    
+}
+
+function removeBook(itemToRemove) {
+    myLibrary = myLibrary.filter(book => book.id !== itemToRemove);
 }
 
 displayLibrary(myLibrary);
