@@ -25,7 +25,20 @@ addBookToLibrary('Atomic Habits', 'James Clear', '320', 'not read yet');
 function displayLibrary(library) {
     library.forEach(book => {
         display.push(book);
+
+        displayBook(book.title + ", by " + book.author + ", " + book.pages + " pages, " + book.read);
+        console.log(book);
     });
 }
+
+const container = document.querySelector('.container');
+const content = document.createElement('div');
+content.classList.add('content');
+
+function displayBook(book){
+    content.textContent = book;
+    container.appendChild(content);
+}
+
 
 displayLibrary(myLibrary);
