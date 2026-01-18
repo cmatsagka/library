@@ -13,28 +13,45 @@
     <div class="container">
 
     </div>
-    <button class="new-book">New Book</button>
-    <form action="" method="get" class="form">
-        <div class="form">
-            <label for="title">Book Title:</label>
-            <input type="text" name="title" id="title" required />
-        </div>
-        <div class="form">
-            <label for="author">Author:</label>
-            <input type="text" name="author" id="author" required />
-        </div>
-        <div class="form">
-            <label for="pages">Pages:</label>
-            <input type="text" name="pages" id="Pages" required />
-        </div>
-        <div class="form">
-            <label for="read">Have you read it?:</label>
-            <input type="text" name="read" id="read" required />
-        </div>
-        <div class="form">
-            <input type="submit" value="Add book" />
-        </div>
-    </form>
 
+    <button id="new-book">New Book</button>
+
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Title:
+                    <input type="text" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Author:
+                    <input type="text" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Pages:
+                    <input type="text" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Have you read it?
+                    <select>
+                        <option value="default">Choose...</option>
+                        <option value="have read"></option>
+                        <option value="not read yet"></option>
+                    </select>
+                    <input type="text" required>
+                </label>
+            </p>
+            <div>
+                <input type="submit" id="normal-close" value="X" />
+                <input type="submit" id="add-book" value="Add Book"/>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>

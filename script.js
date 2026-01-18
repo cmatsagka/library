@@ -43,7 +43,14 @@ function displayBook(book){
 }
 
 function addBook() {
-    
+    let title = document.querySelector("#title");
+    let author = document.querySelector("#author");
+    let pages = document.querySelector("#pages");
+    let read = document.querySelector("#read");
+
+    console.log(title, author, pages, read);
+
+    addBookToLibrary(title, author, pages, read);
 }
 
 displayLibrary(myLibrary);
