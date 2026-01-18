@@ -117,7 +117,7 @@ function displayBook(book){
 
     btnToggle.addEventListener('click', () => {
         book.toggleRead();
-        text.textContent = `"${book.title}" by ${book.author}, ${book.pages} pages. Status: ${book.read}`;
+        status.textContent = `Status: ${book.read}`;
     });
     
     content.appendChild(btnRemove);
