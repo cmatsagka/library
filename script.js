@@ -44,6 +44,10 @@ close.addEventListener('click', () => {
     dialog.close();
 });
 
+addBook.addEventListener('click', (e) => {
+    e.preventDefault();
+});
+
 function displayBook(book){
     const content = document.createElement('p');
     content.classList.add('book');
