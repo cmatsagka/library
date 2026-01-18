@@ -8,6 +8,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container {
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -19,3 +26,5 @@ p {
     background-color: hsl(195, 53%, 79%);
     margin-bottom: 0.8rem;
 }
+
+
