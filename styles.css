@@ -9,9 +9,12 @@ body {
 }
 
 button {
-    padding: 0.8rem;
-    background-color: hsl(195, 53%, 79%);
-    border: 1px solid hsl(195, 38%, 48%);
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    background-color: hsl(195, 38%, 48%);
+    color: white;
     cursor: pointer;
 }
 
@@ -32,7 +35,6 @@ h1 {
     background-color: hsl(195, 38%, 48%);
     color: white;
     font-weight: 900;
-    border: none;
     border-radius: 8px;
     transition: transform 0.2s ease;
 }
@@ -59,6 +61,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .book-card p {
@@ -103,11 +106,19 @@ form {
     background-color: hsl(0, 70%, 90%);
     border-color: hsl(0, 70%, 60%);
     color: hsl(0, 70%, 30%);
-    cursor: pointer;
 }
 
 .btn-remove:hover {
     background-color: hsl(0, 70%, 80%);
+}
+
+.btn-toggle {
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-toggle:hover {
+    background-color: hsl(195, 38%, 38%);
 }
 
 
