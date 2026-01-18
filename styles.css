@@ -8,6 +8,28 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+button {
+    padding: 0.8rem;
+    background-color: hsl(195, 53%, 79%);
+    border: 1px solid hsl(195, 38%, 48%);
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding:1rem;
+}
+
+#newBook {
+    margin: 1rem;
+    background-color: hsl(195, 38%, 48%);
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
 .container {
     padding: 2rem;
     display: grid;
@@ -27,21 +49,9 @@ body {
     justify-content: space-between;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    padding:1rem;
-}
-
 .book-card p {
     margin-bottom: 1rem;
     font-style: italic;
-}
-
-button {
-    padding: 0.8rem;
-    background-color: hsl(195, 53%, 79%);
-    border: 1px solid hsl(195, 38%, 48%);
 }
 
 dialog {
