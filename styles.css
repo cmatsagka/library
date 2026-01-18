@@ -164,6 +164,22 @@ form {
     color: hsl(195, 38%, 30%);
 }
 
+.form-buttons button {
+    background-color: hsl(195, 38%, 48%);
+    color: white;
+    flex: 1;
+}
+
+#close {
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 20%);
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+#addBook {
+    font-weight: 900;
+}
+
 fieldset {
     display: flex;
     flex-direction: column;
