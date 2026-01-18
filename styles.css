@@ -15,6 +15,18 @@ body {
     gap: 20px;
 }
 
+.book-card {
+    padding: 1.5rem;
+    border: 2px solid hsl(195, 53%, 79%);
+    background-color: hsl(195, 53%, 79%);
+
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -23,7 +35,6 @@ h1 {
 
 p {
     padding: 1rem;
-    background-color: hsl(195, 53%, 79%);
     margin-bottom: 0.8rem;
 }
 

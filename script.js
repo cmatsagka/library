@@ -25,7 +25,7 @@ function addBookToLibrary(title, author, pages, read) {
 addBookToLibrary('Other Minds', 'Godfrey Smith', '255', 'read');
 addBookToLibrary('Project Hail Mary', 'Andy Weir', '473', 'read');
 addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', '180', 'not read yet');
-addBookToLibrary('Thinking, Fast and Slow', 'Daniel Kahneman', '499', 'have read');
+addBookToLibrary('Thinking, Fast and Slow', 'Daniel Kahneman', '499', 'read');
 addBookToLibrary('Atomic Habits', 'James Clear', '320', 'not read yet');
 
 function displayLibrary(library) {
