@@ -81,6 +81,19 @@ h1 {
     font-weight: 900;
     margin-bottom: 0.5rem;
     font-style: normal;
+    color: hsl(195, 60%, 20%);
+    line-height: 1.2;
+}
+
+.book-card .author {
+    color: hsl(195, 20%, 40%);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.book-card .pages {
+    font-size: 0.85rem;
+    color: hsl(195, 10%, 50%);
 }
 
 .book-card p {
