@@ -18,6 +18,10 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    transform: translateY(2px);
+}
+
 h1 {
     text-align: center;
     font-size: 2rem;
