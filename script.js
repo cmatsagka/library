@@ -49,6 +49,9 @@ form.addEventListener('submit', (e) => {
     
     addBookToLibrary(title, author, pages, read);
     displayBook(title + ", by " + author + ", " + pages + " pages, " + read);
+
+    form.reset();
+    dialog.close();
 });
 
 newBook.addEventListener('click', () => {
