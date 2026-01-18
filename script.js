@@ -9,6 +9,14 @@ function Book(title, author, pages, read) {
     this.id = crypto.randomUUID();
 }
 
+Book.prototype.toggleRead = function() {
+    if (this.read === "read"){
+        this.read = "not read yet";
+    }else {
+        this.read = "read";
+    }
+};
+
 function addBookToLibrary(title, author, pages, read) {
     const book = new Book(title, author, pages, read);
     myLibrary.push(book);
@@ -102,13 +110,5 @@ function removeBook(itemToRemove) {
     myLibrary = myLibrary.filter(book => book.id !== itemToRemove);
     console.log("Book removed. New library count:", myLibrary.length);
 }
-
-Book.prototype.toggleRead = function() {
-    if (this.read === "read"){
-        this.read = "not read yet";
-    }else {
-        this.read = "read";
-    }
-};
 
 displayLibrary(myLibrary);
