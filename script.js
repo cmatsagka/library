@@ -25,7 +25,7 @@ function displayLibrary(library) {
     library.forEach(book => {
         display.push(book);
 
-        displayBook(book.title + ", by " + book.author + ", " + book.pages + " pages, " + book.read);
+        displayBook(book);
     });
 }
 
@@ -85,6 +85,7 @@ function displayBook(book){
 
 function removeBook(itemToRemove) {
     myLibrary = myLibrary.filter(book => book.id !== itemToRemove);
+    console.log("Book removed. New library count:", myLibrary.length);
 }
 
 displayLibrary(myLibrary);
