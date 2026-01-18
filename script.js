@@ -32,13 +32,12 @@ function displayLibrary(library) {
 }
 
 const container = document.querySelector('.container');
-const content = document.createElement('div');
-content.classList.add('content');
 
 function displayBook(book){
+    const content = document.createElement('p');
+    content.classList.add('book');
     content.textContent = book;
     container.appendChild(content);
 }
-
 
 displayLibrary(myLibrary);
