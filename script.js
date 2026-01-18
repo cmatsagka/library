@@ -112,7 +112,7 @@ function displayBook(book){
     });
 
     const btnGroup = document.createElement('div');
-    btnGroup.classList.add('btnGroup');
+    btnGroup.classList.add('card-buttons');
 
     const btnToggle = document.createElement('button');
     btnToggle.classList.add('btn-toggle');
