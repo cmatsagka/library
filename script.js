@@ -84,6 +84,7 @@ function displayBook(book){
     content.appendChild(text);
 
     const btnRemove = document.createElement('button');
+    btnRemove.classList.add('btn-remove');
     btnRemove.dataset.index = book.id;
 
     btnRemove.textContent = 'Remove';
@@ -94,6 +95,7 @@ function displayBook(book){
     });
 
     const btnToggle = document.createElement('button');
+    btnToggle.classList.add('btn-toggle');
     btnToggle.textContent = "Change Status";
 
     btnToggle.addEventListener('click', () => {

@@ -59,27 +59,32 @@ dialog::backdrop {
 }
 
 form {
-    display: table;
-    padding: 1rem;
-    border: 1px solid hsl(195, 38%, 48%);
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
 }
 
-.form {
-    display: table-row;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
-label, input {
-    display: table-cell;
-    margin-bottom: 0.8rem;
+.form-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
 }
 
-label {
-    padding-right: 1rem;
+.btn-remove {
+    background-color: hsl(0, 70%, 90%);
+    border-color: hsl(0, 70%, 60%);
+    color: hsl(0, 70%, 30%);
+    cursor: pointer;
 }
 
-input {
-    background-color: hsl(194, 42%, 84%);
-    padding: 0.4rem 0.8rem;
+.btn-remove:hover {
+    background-color: hsl(0, 70%, 80%);
 }
 
 
