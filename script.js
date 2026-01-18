@@ -31,26 +31,24 @@ function displayLibrary(library) {
 }
 
 const container = document.querySelector('.container');
-const btn = document.querySelector('button');
+const newBook = document.querySelector('#newBook');
+const dialog = document.querySelector('#dialog');
+const addBook = document.querySelector('#addBook');
+const close = document.querySelector('#close');
 
-btn.addEventListener('click', addBook);
+newBook.addEventListener('click', () => {
+    dialog.showModal();
+});
+
+close.addEventListener('click', () => {
+    dialog.close();
+});
 
 function displayBook(book){
     const content = document.createElement('p');
     content.classList.add('book');
     content.textContent = book;
     container.appendChild(content);
-}
-
-function addBook() {
-    let title = document.querySelector("#title");
-    let author = document.querySelector("#author");
-    let pages = document.querySelector("#pages");
-    let read = document.querySelector("#read");
-
-    console.log(title, author, pages, read);
-
-    addBookToLibrary(title, author, pages, read);
 }
 
 displayLibrary(myLibrary);
