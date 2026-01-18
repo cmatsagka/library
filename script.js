@@ -64,14 +64,22 @@ close.addEventListener('click', () => {
 
 function displayBook(book){
     const content = document.createElement('p');
-    const btnRemove = document.createElement('button');
-
+    
     content.classList.add('book');
     content.textContent = book;
     container.appendChild(content);
 
+    const btnRemove = document.createElement('button');
+    btnRemove.dataset.index = book.id;
+    let bookToRemove = book.id;
+
     btnRemove.textContent = 'Remove';
     content.appendChild(btnRemove);
+
+    btnRemove.addEventListener('click', () => {
+        content.remove();
+        
+    });
 }
 
 displayLibrary(myLibrary);
