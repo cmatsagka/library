@@ -45,10 +45,11 @@ form.addEventListener('submit', (e) => {
     let author = data.get('author');
     let pages = data.get('pages');
     let read = data.get('read');
-    console.log(title, author, pages, read);
     
     addBookToLibrary(title, author, pages, read);
-    displayBook(title + ", by " + author + ", " + pages + " pages, " + read);
+
+    const lastBook = myLibrary[myLibrary.length - 1];
+    displayBook(lastBook);
 
     form.reset();
     dialog.close();
