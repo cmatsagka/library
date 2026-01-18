@@ -1,4 +1,5 @@
 const myLibrary = [];
+let display = [];
 
 function Book(title, author, pages, read) {
     this.title = title;
@@ -23,7 +24,7 @@ addBookToLibrary('Atomic Habits', 'James Clear', '320', 'not read yet');
 
 function displayLibrary(library) {
     library.forEach(book => {
-        console.log(book);
+        display.push(book);
     });
 }
 
