@@ -12,7 +12,6 @@ function Book(title, author, pages, read) {
 
 function addBookToLibrary(title, author, pages, read) {
     const book = new Book(title, author, pages, read);
-
     myLibrary.push(book);
 }
 
@@ -49,6 +48,7 @@ form.addEventListener('submit', (e) => {
     console.log(title, author, pages, read);
     
     addBookToLibrary(title, author, pages, read);
+    displayBook(title + ", by " + author + ", " + pages + " pages, " + read);
 });
 
 newBook.addEventListener('click', () => {
@@ -58,8 +58,6 @@ newBook.addEventListener('click', () => {
 close.addEventListener('click', () => {
     dialog.close();
 });
-
-
 
 function displayBook(book){
     const content = document.createElement('p');
