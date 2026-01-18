@@ -68,14 +68,23 @@ h1 {
     gap: 1rem;
 }
 
+.book-card .title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+}
+
 .book-card p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     font-style: italic;
-    flex-grow: 1;
+    font-size: 0.95rem;  
+}
 
-    line-height: 1.5;
-    color: hsl(195, 38%, 20%);    
-
+.status-text {
+    font-weight: 900;
+    font-style: normal !important;
+    margin-top: auto;
 }
 
 dialog {
