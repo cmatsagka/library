@@ -68,23 +68,25 @@ close.addEventListener('click', () => {
 });
 
 function displayBook(book){
-    const content = document.createElement('p');
-    
-    content.classList.add('book');
-    content.textContent = `${book.title} by ${book.author} ${book.pages} ${book.read}`;
-    container.appendChild(content);
+    const content = document.createElement('div');
+    content.classList.add('book-card');
+
+    const text = document.createElement('p');
+    text.textContent = `"${book.title}" by ${book.author}, ${book.pages} pages. Status: ${book.read}`;
+    content.appendChild(text);
 
     const btnRemove = document.createElement('button');
     btnRemove.dataset.index = book.id;
 
     btnRemove.textContent = 'Remove';
-    content.appendChild(btnRemove);
-
+    
     btnRemove.addEventListener('click', () => {
         content.remove();
         removeBook(book.id);
     });
-
+    
+    content.appendChild(btnRemove);
+    container.appendChild(content);
     
 }
 
