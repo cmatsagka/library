@@ -33,9 +33,9 @@ h1 {
     padding:1rem;
 }
 
-p {
-    padding: 1rem;
-    margin-bottom: 0.8rem;
+.book-card p {
+    margin-bottom: 1rem;
+    font-style: italic;
 }
 
 button {
@@ -50,7 +50,7 @@ dialog {
     border-radius: 0.8rem;
     box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.2);
     margin: auto;
-    width: 75%;
+    width: min(90%, 400px);
 }
 
 dialog::backdrop {
@@ -60,6 +60,7 @@ dialog::backdrop {
 
 form {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-top: 1rem;
 }
