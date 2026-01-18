@@ -33,4 +33,28 @@ button {
     border: 1px solid hsl(195, 38%, 48%);
 }
 
+form.form {
+    display: table;
+    padding: 1rem;
+    border: 1px solid hsl(195, 38%, 48%);
+}
+
+.form {
+    display: table-row;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 0.8rem;
+}
+
+label {
+    padding-right: 1rem;
+}
+
+input {
+    background-color: hsl(194, 42%, 84%);
+    padding: 0.4rem 0.8rem;
+}
+
 
