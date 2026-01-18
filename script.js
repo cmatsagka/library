@@ -31,12 +31,19 @@ function displayLibrary(library) {
 }
 
 const container = document.querySelector('.container');
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', addBook);
 
 function displayBook(book){
     const content = document.createElement('p');
     content.classList.add('book');
     content.textContent = book;
     container.appendChild(content);
+}
+
+function addBook() {
+    
 }
 
 displayLibrary(myLibrary);

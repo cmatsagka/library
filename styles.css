@@ -27,4 +27,10 @@ p {
     margin-bottom: 0.8rem;
 }
 
+button {
+    padding: 0.8rem;
+    background-color: hsl(195, 53%, 79%);
+    border: 1px solid hsl(195, 38%, 48%);
+}
+
 
