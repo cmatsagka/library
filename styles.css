@@ -44,7 +44,21 @@ button {
     border: 1px solid hsl(195, 38%, 48%);
 }
 
-form.form {
+dialog {
+    padding: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.2);
+    margin: auto;
+    width: 75%;
+}
+
+dialog::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+form {
     display: table;
     padding: 1rem;
     border: 1px solid hsl(195, 38%, 48%);
