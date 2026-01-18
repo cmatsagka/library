@@ -35,6 +35,21 @@ const newBook = document.querySelector('#newBook');
 const dialog = document.querySelector('#dialog');
 const addBook = document.querySelector('#addBook');
 const close = document.querySelector('#close');
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.target);
+
+    let title = data.get('title');
+    let author = data.get('author');
+    let pages = data.get('pages');
+    let read = data.get('read');
+    console.log(title, author, pages, read);
+    
+    addBookToLibrary(title, author, pages, read);
+});
 
 newBook.addEventListener('click', () => {
     dialog.showModal();
@@ -44,9 +59,7 @@ close.addEventListener('click', () => {
     dialog.close();
 });
 
-addBook.addEventListener('click', (e) => {
-    e.preventDefault();
-});
+
 
 function displayBook(book){
     const content = document.createElement('p');

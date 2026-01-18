@@ -21,34 +21,34 @@
             <p>
                 <label>
                     Title:
-                    <input type="text" required>
+                    <input type="text" name="title" required>
                 </label>
             </p>
             <p>
                 <label>
                     Author:
-                    <input type="text" required>
+                    <input type="text" name="author" required>
                 </label>
             </p>
             <p>
                 <label>
                     Pages:
-                    <input type="text" required>
+                    <input type="text" name="pages" required>
                 </label>
             </p>
             <p>
-                <label>
-                    Have you read it?
-                    <select>
-                        <option value="default">Choose...</option>
-                        <option value="have read"></option>
-                        <option value="not read yet"></option>
-                    </select>
-                    <input type="text" required>
-                </label>
+                <fieldset>
+                    <legend>Have you read it?</legend>
+                    
+                    <div>
+                        <label for="yes">Yes</label>
+                        <input type="checkbox" name="read">
+                    </div>
+
+                </fieldset>
             </p>
             <div>
-                <input type="submit" id="close" value="X" />
+                <input type="button" id="close" value="X" />
                 <input type="submit" id="addBook" value="Add Book"/>
             </div>
         </form>
