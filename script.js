@@ -1,5 +1,4 @@
 let myLibrary = [];
-let display = [];
 
 function Book(title, author, pages, read) {
     this.title = title;
@@ -19,12 +18,10 @@ addBookToLibrary('Other Minds', 'Godfrey Smith', '255', 'have read');
 addBookToLibrary('Project Hail Mary', 'Andy Weir', '473', 'have read');
 addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', '180', 'not read yet');
 addBookToLibrary('Thinking, Fast and Slow', 'Daniel Kahneman', '499', 'have read');
-addBookToLibrary('Atomic Habits', 'James Clear', '320', 'not read yet');;
+addBookToLibrary('Atomic Habits', 'James Clear', '320', 'not read yet');
 
 function displayLibrary(library) {
     library.forEach(book => {
-        display.push(book);
-
         displayBook(book);
     });
 }
@@ -44,9 +41,16 @@ form.addEventListener('submit', (e) => {
     let title = data.get('title');
     let author = data.get('author');
     let pages = data.get('pages');
-    let read = data.get('read');
+
+    let isRead = data.get('read');
+
+    if (isRead) {
+        isRead = "read";
+    }else{
+        isRead = "not read yet";
+    }
     
-    addBookToLibrary(title, author, pages, read);
+    addBookToLibrary(title, author, pages, isRead);
 
     const lastBook = myLibrary[myLibrary.length - 1];
     displayBook(lastBook);
