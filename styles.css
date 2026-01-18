@@ -57,15 +57,23 @@ h1 {
 
 .book-card {
     padding: 1.5rem;
-    border: 2px solid hsl(195, 53%, 79%);
-    background-color: hsl(195, 53%, 79%);
+    border-left: 8px solid hsl(195, 38%, 48%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+    background-color: white;
 
     min-height: 250px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px hsla(0, 0%, 0%, 0.15);
 }
 
 .book-card .title {
