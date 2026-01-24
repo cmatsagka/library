@@ -16,9 +16,8 @@ class Book {
         }else {
             this.read = "read";
         }
-    };
+    }
 }
-
 
 function addBookToLibrary(title, author, pages, read) {
     const book = new Book(title, author, pages, read);
