@@ -9,15 +9,16 @@ class Book {
     
         this.id = crypto.randomUUID();
     }
+
+    toggleRead() {
+        if (this.read === "read"){
+            this.read = "not read yet";
+        }else {
+            this.read = "read";
+        }
+    };
 }
 
-Book.prototype.toggleRead = function() {
-    if (this.read === "read"){
-        this.read = "not read yet";
-    }else {
-        this.read = "read";
-    }
-};
 
 function addBookToLibrary(title, author, pages, read) {
     const book = new Book(title, author, pages, read);
